@@ -1,0 +1,12 @@
+package ex_04_Operators;
+
+public class Lab050_New_Operator {
+    public static void main(String[] args) {
+        //New Operator
+        //Non-Primitive variables
+        //New operator creates object memory in the JVM
+        String name=new String("Sameena");
+        System.out.println(name);
+
+    }
+}
