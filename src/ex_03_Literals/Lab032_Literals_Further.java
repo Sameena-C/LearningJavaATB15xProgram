@@ -12,6 +12,11 @@ public class Lab032_Literals_Further {
 
         // hexadecimal Literals base 16
         int hex=0Xface;
+        short s=0101;
+        int i=0x76FE_____23;
+        byte b=0X0_________________F;
+        int a=2- -7;
+        System.out.println(a);
         /* We never use binary, octal, hexadecimal in automation*/
     }
 }
