@@ -20,5 +20,9 @@ public class LabStringExamples3 {
 
         long count = "a\nb\nc".lines().count();
         System.out.println(count);//3
+
+        System.out.println("=".repeat(10)); //to beautify the output we use this
+        System.out.println("Hello ");
+        System.out.println("=".repeat(10));
     }
 }
