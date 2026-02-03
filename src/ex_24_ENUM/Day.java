@@ -1,0 +1,5 @@
+package ex_24_ENUM;
+
+public enum Day {
+    SUNDAY, MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY
+}
