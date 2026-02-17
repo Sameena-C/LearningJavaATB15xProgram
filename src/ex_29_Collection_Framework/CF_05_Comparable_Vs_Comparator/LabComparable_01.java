@@ -1,6 +1,7 @@
 package ex_29_Collection_Framework.CF_05_Comparable_Vs_Comparator;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class LabComparable_01 {
@@ -15,9 +16,16 @@ public class LabComparable_01 {
         employeList.add(e3);
         System.out.println(employeList);
 
+        //Sort them based on the id
+
+        Collections.sort(employeList);
+     //   System.out.println(employeList);
+
+        //Sort them based on the name
+        System.out.println(employeList);  //print based on natural ordering
     }
 }
-class Employe {
+class Employe implements Comparable<Employe>{
     private Integer id;
     private String name;
 
@@ -51,5 +59,11 @@ class Employe {
                 "id=" + id +
                 ", name='" + name + '\'' +
                 '}';
+    }
+
+    @Override
+    public int compareTo(Employe o) {
+       // return this.id - o.id;
+        return this.name.compareTo(o.name);
     }
 }
